@@ -72,11 +72,11 @@ namespace API.NETCore3._1
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)//quais e como opção de serviços vamos utilizar
         {
-            if (env.IsDevelopment())//se a aplicação tiver em ambiente de desenvolvimento
-            {
+            //if (env.IsDevelopment())//se a aplicação tiver em ambiente de desenvolvimento
+            //{
                 app.UseDeveloperExceptionPage(); //mostrar mais detalhes do erro 
-            }
-            app.UseDeveloperExceptionPage();
+            //}
+            
             app.UseHttpsRedirection(); //HTTPS
             app.UseSwagger(); //Utilizando o Swagger
             app.UseSwaggerUI(c => //utilizando o Swagger UI(Ferramenta Visual) 
