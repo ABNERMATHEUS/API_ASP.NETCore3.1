@@ -55,8 +55,8 @@ namespace API.NETCore3._1
               });
 
 
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database")); //utilizado para banco de dados em memória
-            //services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
+            //services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database")); //utilizado para banco de dados em memória
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
             
             //!!NESTA VERSÃO NÃO PRECISA MAIS COLOCAR, PORQUE O ADDDBCONTEXT JÁ FAZ ISSO!! services.AddScoped<DataContext, DataContext>();//dependencia somente 1 instancia 
             //services.AddScoped<DataContext, DataContext>();//dependencia N's instancias 
