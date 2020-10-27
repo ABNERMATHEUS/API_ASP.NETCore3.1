@@ -76,7 +76,7 @@ namespace API.NETCore3._1
             {
                 app.UseDeveloperExceptionPage(); //mostrar mais detalhes do erro 
             }
-
+            app.UseDeveloperExceptionPage();
             app.UseHttpsRedirection(); //HTTPS
             app.UseSwagger(); //Utilizando o Swagger
             app.UseSwaggerUI(c => //utilizando o Swagger UI(Ferramenta Visual) 
