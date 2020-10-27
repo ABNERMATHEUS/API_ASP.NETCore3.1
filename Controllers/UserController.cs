@@ -91,7 +91,7 @@ namespace API.NETCore3._1.Controllers
             catch (Exception ex)
             {
 
-                return NotFound(new { message = "Dados já configurados"+ex.Message });
+                return NotFound(new { message = "Dados já configurados" });
             }
            
         }
