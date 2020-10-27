@@ -88,10 +88,10 @@ namespace API.NETCore3._1.Controllers
                 await dataContext.SaveChangesAsync();
                 return Ok(new { message = "Dados configurados com sucesso" });
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                return NotFound(new { message = "Dados já configurados" });
+                return NotFound(new { message = "Dados já configurados"+ex.Message });
             }
            
         }
